@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: case-study-app
+  name: docker-case-study
+  namespace: default
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: case-study-app
+      app: docker-case-study
   template:
     metadata:
       labels:
-        app: case-study-app
+        app: docker-case-study
     spec:
       containers:
-      - name: app
-        image: case-study-app:latest
+      - name: docker-case-study
+        image: ojasbhole1123/docker-case-study:latest
         ports:
         - containerPort: 3000
