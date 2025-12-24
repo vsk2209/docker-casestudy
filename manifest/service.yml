@@ -8,5 +8,5 @@ spec:
     app: case-study-app
   ports:
     - port: 3000
-      targetPort: 3020
+      targetPort: 3000
       nodePort: 30020
