@@ -15,6 +15,7 @@ spec:
     spec:
       containers:
       - name: docker-case-study
-        image: vsk2209/docker-casestudy.git
+        image: 233125067005.dkr.ecr.ap-south-1.amazonaws.com/docker-case-study:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
