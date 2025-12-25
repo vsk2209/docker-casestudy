@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: docker-case-study
-        image: ojasbhole1123/docker-case-study:latest
+        image: vsk2209/docker-casestudy.git
         ports:
         - containerPort: 3000
